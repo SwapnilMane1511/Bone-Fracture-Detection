@@ -1,0 +1,7 @@
+train: C:/Users/user/Desktop/yolov8/New folder (2)/train
+val: C:/Users/user/Desktop/yolov8/New folder (2)/valid
+
+
+nc: 7
+names: ['elbow positive', 'fingers positive', 'forearm fracture', 'humerus', 'humerus fracture', 'shoulder fracture', 'wrist positive']
+ 

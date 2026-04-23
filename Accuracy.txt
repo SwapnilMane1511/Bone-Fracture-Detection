@@ -1,0 +1,5 @@
+Bone Fracture Detection using Deep Learning
+*******************************************
+Algorithm / Model Used: YOLOv8
+Accuracy [Mean Average Precision(mAP50)] : 86% 
+*******************************************

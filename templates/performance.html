@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Bone Fracture Detection</title>
+
+	<!-- favicon -->
+	 
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../static/assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="../static/assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="../static/assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="../static/assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="../static/assets/css/login.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="../static/assets/css/responsive.css">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								 
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a href="{{ url_for('first')}}">Home</a></li>
+								 
+								<li><a href="{{ url_for('image')}}">Image_Prediction</a></li>
+								<li><a href="{{ url_for('webcam')}}">Webcam</a></li>
+								<li><a href="{{ url_for('performance')}}">Performance_Analysis</a></li>
+								<li><a href="{{ url_for('chart')}}">Chart</a></li>
+								<li><a href=""></a></li>
+								 
+							</ul>
+						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search arewa -->
+	
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>Bone Fracture Detection</p>
+						<h1>Performance Analysis</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- featured section -->
+	 
+	<!-- team section -->
+	<div class="mt-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3>Confusion   <span class="orange-text">Matrix</span></h3>
+						<p>Bone Fracture Detection.</p>
+					</div>
+				</div>
+			</div>
+			   
+			<div  style="margin-left:100px">
+                
+				<body>
+		 
+			 <div class="col-lg-8 mx-auto">
+					   <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+						 
+									
+								   <!-- <div><span style="margin-left:300px;color:red"><font size="8">Confusion Matrix</font></div> -->
+						 </br>
+						 </br>
+						 
+					 <center>	    <div><img style="margin-left:10px;width:800px;height:500px;" src="../static/confusion_matrix.png"</div></center>
+											
+									  
+								
+					 </div>
+			 
+			 
+			  
+			 </body>
+			  
+	  
+ <body>
+		 
+				<div class="col-lg-8 mx-auto">
+						  <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+					   <center>   <h3>PR Curve   <span class="orange-text">(Precision-Recall Curve) </span></h3></center>
+   
+									   
+									  <!-- <div><span style="margin-left:300px;color:red"><font size="8">Confusion Matrix</font></div> -->
+							</br>
+							</br>
+							
+						<center>	    <div><img style="margin-left:10px;width:800px;height:500px;" src="../static/PR_curve.png"</div></center>
+											   
+										 
+								   
+						</div>
+				
+				
+				 
+				</body>
+				 
+		 
+   
+   
+				<body>
+		 
+					<div class="col-lg-8 mx-auto">
+							  <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+						   <center>   <h3>Training and Validation Loss /    <span class="orange-text">mAP50 Graphs</span></h3></center>
+	   
+										   
+										  <!-- <div><span style="margin-left:300px;color:red"><font size="8">Confusion Matrix</font></div> -->
+								</br>
+								</br>
+								
+							<center>	    <div><img style="margin-left:10px;width:800px;height:500px;" src="../static/results.png"</div></center>
+												   
+											 
+									   
+							</div>
+					
+					
+					 
+					</body>
+
+
+
+		</div>
+	</div>
+	<!-- end team section -->
+
+	<!-- testimonail-section -->
+	 
+	<div class="footer-area">
+		<div class="container">
+			 
+		</div>
+	</div>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			 
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+	
+	<!-- jquery -->
+	<!-- jquery -->
+	<script src="../static/assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="../static/assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="../static/assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="../static/assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="../static/assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="../static/assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="../static/assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="../static/assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="../static/assets/js/main.js"></script>
+
+</body>
+</html>
