@@ -1,48 +1,58 @@
-name: Bone Fracture Detection CI
+name: Bone Fracture Detection CI + Pages
 
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # Fix Node 24 warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-    # 📥 Checkout code
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 🐍 Setup Python
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
         python-version: "3.10"
 
-    # ⚙️ Install dependencies
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # 🤖 Install PyTorch (CPU version)
     - name: Install PyTorch (CPU)
       run: |
         pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
-    # 🧪 Basic test
-    - name: Run basic test
+    - name: Test run
       run: |
-        python -c "print('CI pipeline running successfully 🚀')"
+        python -c "print('CI working ✅')"
 
-    # 🌐 Optional: Test Flask app startup
-    - name: Test Flask app (optional)
-      run: |
-        export FLASK_APP=app.py
-        flask run &
-        sleep 5
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload Pages Artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./   # ✅ FIXED (root folder)
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
