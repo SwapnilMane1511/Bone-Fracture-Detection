@@ -11,15 +11,15 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 
 <!-- CSS -->
-<link rel="stylesheet" href="static/assets/css/all.min.css">
-<link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="static/assets/css/owl.carousel.css">
-<link rel="stylesheet" href="static/assets/css/magnific-popup.css">
-<link rel="stylesheet" href="static/assets/css/animate.css">
-<link rel="stylesheet" href="static/assets/css/meanmenu.min.css">
-<link rel="stylesheet" href="static/assets/css/main.css">
-<link rel="stylesheet" href="static/assets/css/responsive.css">
-<link rel="stylesheet" href="static/assets/css/login.css">
+<link rel="stylesheet" href="../static/assets/css/all.min.css">
+<link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/assets/css/owl.carousel.css">
+<link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+<link rel="stylesheet" href="../static/assets/css/animate.css">
+<link rel="stylesheet" href="../static/assets/css/meanmenu.min.css">
+<link rel="stylesheet" href="../static/assets/css/main.css">
+<link rel="stylesheet" href="../static/assets/css/responsive.css">
+<link rel="stylesheet" href="../static/assets/css/login.css">
 
 <script>
 function login(){
@@ -28,7 +28,7 @@ function login(){
 
     if(uname === "admin" && pwd === "admin"){
         alert("Login Success!");
-        window.location = "image.html";
+        window.location = "image.html"; // same folder navigation
     } else {
         alert("Invalid Credentials!");
     }
@@ -39,32 +39,15 @@ function login(){
 
 <body>
 
-<!-- Preloader -->
-<div class="loader">
-    <div class="loader-inner">
-        <div class="circle"></div>
-    </div>
-</div>
-
 <!-- Header -->
 <div class="top-header-area" id="sticker">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="main-menu-wrap">
-
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="templates/login.html">Login</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="mobile-menu"></div>
-
-                </div>
-            </div>
-        </div>
+    <div class="container text-center">
+        <nav class="main-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
 
@@ -98,22 +81,10 @@ function login(){
     </div>
 </div>
 
-<!-- Footer -->
-<div class="footer-area">
-    <div class="container"></div>
-</div>
-
-<div class="copyright">
-    <div class="container"></div>
-</div>
-
 <!-- JS -->
-<script src="static/assets/js/jquery-1.11.3.min.js"></script>
-<script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="static/assets/js/owl.carousel.min.js"></script>
-<script src="static/assets/js/jquery.meanmenu.min.js"></script>
-<script src="static/assets/js/sticker.js"></script>
-<script src="static/assets/js/main.js"></script>
+<script src="../static/assets/js/jquery-1.11.3.min.js"></script>
+<script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/assets/js/main.js"></script>
 
 </body>
 </html>
